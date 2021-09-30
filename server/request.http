@@ -1,0 +1,52 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "Huynh",
+    "password": "Thuong"
+}
+
+###
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "Huynh",
+    "password": "Thuong"
+}
+
+###
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTRlYTE0MWI0YWUwOWY1NjQ2ZTdiMTAiLCJpYXQiOjE2MzI5MDgwNjB9.vgcppAj_qHWEVA6UpvHSfhL0k3-ODNI7GVGhfUe5VmU
+
+{
+    "title": "Fourth Post",
+    "description": "Huynh Ngoc Thuong",
+    "url": "google.com",
+    "status": "TO LEARN"
+}
+
+
+###
+GET http://localhost:5000/api/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTRlYTE0MWI0YWUwOWY1NjQ2ZTdiMTAiLCJpYXQiOjE2MzI5MDgwNjB9.vgcppAj_qHWEVA6UpvHSfhL0k3-ODNI7GVGhfUe5VmU
+
+
+###
+PUT http://localhost:5000/api/posts/614ea153b4ae09f5646e7b12
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTRlYTE0MWI0YWUwOWY1NjQ2ZTdiMTAiLCJpYXQiOjE2MzI5MDgwNjB9.vgcppAj_qHWEVA6UpvHSfhL0k3-ODNI7GVGhfUe5VmU
+
+{
+    "title": "Sencond Post",
+    "description": "Huynh Ngoc Thuong",
+    "url": "google.com",
+    "status": "LEARNING"
+}
+
+###
+DELETE http://localhost:5000/api/posts/614ebf1b912cfba11fca64fa
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTRlYTE0MWI0YWUwOWY1NjQ2ZTdiMTAiLCJpYXQiOjE2MzI1NTA4MjF9.NTQWyLpxQWgRbri617VEajrEsr4nktBDInuUSimG2zY
+ 
