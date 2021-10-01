@@ -106,8 +106,7 @@ function Dashboard(props) {
           })
         }
         delay={3000}
-        autohide
-        animation={false}>
+        autohide>
         <Toast.Body>{message}</Toast.Body>
       </Toast>
     </>
