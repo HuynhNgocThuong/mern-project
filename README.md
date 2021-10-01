@@ -31,10 +31,18 @@ npx create-react-app client
 ```
 heroku login
 
+heroku create
+heroku git:clone -a morning-cove-83082
+cd morning-cove-83082
+
 git init
 git add .
 git commit -am "make it better"
 
 git subtree push --prefix server heroku master
+
+heroku config:set DB_USERNAME=thuonghuynh
+heroku config:set DB_PASSWORD=cloud123456
+heroku config:set ACCESS_TOKEN_SECRET=Mario
 ```
 
