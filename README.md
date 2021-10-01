@@ -27,3 +27,14 @@ react-router-dom: Router
 npx create-react-app client
 ```
 
+## Deploy heroku
+```
+heroku login
+
+git init
+git add .
+git commit -am "make it better"
+
+git subtree push --prefix server heroku master
+```
+
